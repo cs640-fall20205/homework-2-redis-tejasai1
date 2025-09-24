@@ -1,0 +1,8 @@
+services:
+
+  db:
+    container_name: 7dbs_redis_db
+    image: redis:5.0.5-alpine
+    restart: always
+    volumes:
+      - /tmp/redis-data:/data

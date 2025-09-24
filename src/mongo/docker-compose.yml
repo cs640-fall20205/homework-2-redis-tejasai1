@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  mongo:
+    container_name: 7dbs_mongo_db
+    image: mongo:4.0
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: gonmo
+    volumes:
+      - /tmp/mongo:/data/db
